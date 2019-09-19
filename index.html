@@ -814,7 +814,7 @@
     taskNum = eval(taskNum)-1;
     let reload = false;
 
-    if (taskNum&&vis){
+    if (taskNum !== undefined && vis!==undefined){
         let visType = vis == 'NL' ? 'nodeLink' : 'adjMatrix';
         startExperimentr('tasks',visType)
     } else {
